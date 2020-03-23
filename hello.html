@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+1 - Above is the first line and should refer to used html version
+2 - second, we should know that html page AFAK, it only have 2 main tags ( head tag , body tag) 
+3 - each one of this main tags  has its use. 
+4 - in body tag, we have many many tags as below
+-->
+<!--
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
+ This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, 
+ enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+-->
+<html>
+	<head>
+		<title>
+			My Web Page!
+		</title>
+		<style>
+			h2{color:red;font:arial;text-align:center;}
+			div{background-color: blue;width: 500px;height: 400px;margin:30px; padding: 20px; font-size:50px; font-weight: bold;}
+<!-- I can add many div to my web page and give  a name for each part of that part-->
+			table{
+				border: 2px solid black;
+				border-collapse: collapse;}
+			th {
+				padding: 10px;
+				border: 1px solid black;
+				width:100px;
+				}
+			td {
+				background-color: yellow;
+				border:1px solid black;
+				width:100px;
+				}
+			#top{
+				font-size: 36px;}
+			#middle{
+				font-size: 24px;}
+			#bottom{
+				font-size: 12px;}
+			<!--You may want to control specific part of web page and change its bg color,...etc. we can do that by using div tag. let me show you.-->
+		</style>
+		<!-- <link rel="stylesheet" href="E:/style.css">-->
+<!--
+The good thing is that we can take this style and add it to 
+different file, which is CSS file, to be used with many different html files
+in same time.
+Now, we only need to link each html file with this css file.
+there in CSS file, we can write something like this
+h3{color:yellow;text-align:center;}
+
+-->
+	</head>
+	<body>
+<!--
+we can add only up to 6 headers AFAI.
+inside this headers, we can use different specific tags like STYLE
+-->
+		<div id="top">
+			this is the <span class="name">top</span> of my web page.
+		</div>
+		<div id="middle">
+			this is the <span class="name">middle</span> of my web page.
+		</div>
+		<div id="bottom">
+			this is the <span class="name">bottom</span> of my web page.
+		</div>
+		<h1 style="color:blue;text-align:center;">Hello, world!</h1>
+<!-- However, we can also define this style tag to be global one inside main head tag.
+by this way, any one can use it without repeating same style 
+-->
+		<p>Hello, this is new tag</p>
+		<h2>Hello, world!</h2>
+		<h3>Hello, world!</h3>
+		<div>Hello, world!</div>
+		<ul>
+			<li>this is first one</li>
+			<li>this is second one</li>
+			<li>this is third one</li>
+			<li>this is fourth one</li>
+		</ul>
+		<img src="E:/cat.webp" height="1000" width="70%">
+		<ol>
+			<h1><li>this is first one</li></h1>
+			<li>this is second one</li>
+			<li>this is third one</li>
+			<li>this is fourth one</li>
+		</ol>
+		<table>
+			<tr>
+				<th>name</th>
+				<th>last name</th>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>last name</td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>last name</td>
+			</tr>
+		</table>
+		<form>
+			<input type="text" placeholder="Full Name" name="name">
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
